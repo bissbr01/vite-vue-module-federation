@@ -6,8 +6,7 @@ const app = createApp(App)
 
 const RemoteApp = defineAsyncComponent(() => import("remote_app/App"));
 
-app.component("RemoteButton", RemoteApp);
-
+app.component("RemoteApp", RemoteApp);
 app.mount('#app')
 
 

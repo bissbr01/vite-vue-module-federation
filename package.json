@@ -11,10 +11,13 @@
     "build:remotes": "pnpm --parallel --filter \"./remote\" build",
     "serve:remotes": "pnpm --parallel --filter \"./remote\"  serve",
     "dev:hosts": "pnpm --filter \"./host\" dev",
-    "stop": "kill-port --port 5000,5001,5002",
+    "stop": "kill-port --port 5000,5001",
     "clean": "pnpm run clean"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "kill-port": "^2.0.1"
+  }
 }
