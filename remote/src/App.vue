@@ -1,17 +1,28 @@
 <script setup lang="ts">
+import Button from './components/Button.vue'
 </script>
 
 <template>
-  <div>
-    <h1 class="app">Remote App</h1>
+  <div class="container">
+    <h1 class="title">Remote App</h1>
+    <Button />
+    <h2>Store:</h2>
+    <span></span>
   </div>
 </template>
 
 <style scoped>
-.app {
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+.title {
   background: teal;
   color: white;
-  width: 100px;
-  height: 100px;
+  padding: 1rem;
+  border-radius: .5rem;
+
 }
 </style>

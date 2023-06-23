@@ -11,6 +11,7 @@
     "stop": "kill-port --port 5001"
   },
   "dependencies": {
+    "pinia": "^2.1.4",
     "vue": "^3.2.47"
   },
   "devDependencies": {
