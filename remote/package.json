@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "pinia": "^2.1.4",
-    "vue": "^3.2.47"
+    "vue": "^3.3.4"
   },
   "devDependencies": {
     "@originjs/vite-plugin-federation": "^1.2.3",

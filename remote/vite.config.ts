@@ -13,7 +13,7 @@ export default defineConfig({
       exposes: {
         './App': './src/App.vue',
       },
-      shared: ['vue']
+      shared: ['vue', 'pinia']
     })
   ],
   base: 'http://localhost:5001',
