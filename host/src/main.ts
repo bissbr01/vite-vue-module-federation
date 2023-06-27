@@ -3,9 +3,11 @@ import './style.css'
 import App from './App.vue'
 
 const app = createApp(App)
-const RemoteApp = defineAsyncComponent(() => import("remote_app/App"));
+const BuyNow = defineAsyncComponent(() => import("remote_app/BuyNow"));
+const CartIcon = defineAsyncComponent(() => import("remote_app/CartIcon"));
 
-app.component("RemoteApp", RemoteApp);
+app.component("RemoteApp", BuyNow);
+app.component("RemoteApp", CartIcon);
 app.mount('#app')
 
 

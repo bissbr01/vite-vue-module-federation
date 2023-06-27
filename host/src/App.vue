@@ -1,4 +1,11 @@
 <script setup lang="ts">
+
+const testIcon = {
+  sku: 123,
+  title: 'test paste',
+  price: 144,
+  quantity: 1
+}
 </script>
 
 <template>
@@ -10,7 +17,8 @@
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <RemoteApp />
+  <BuyNow :item="testIcon" />
+  <CartIcon />
 </template>
 
 <style scoped>
