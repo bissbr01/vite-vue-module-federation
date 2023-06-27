@@ -42,6 +42,9 @@ importers:
 
   remote:
     dependencies:
+      '@tabler/icons-vue':
+        specifier: ^2.23.0
+        version: 2.23.0(vue@3.3.4)
       pinia:
         specifier: ^2.1.4
         version: 2.1.4(typescript@5.0.2)(vue@3.3.4)
@@ -301,6 +304,19 @@ packages:
       estree-walker: 3.0.3
       magic-string: 0.27.0
     dev: true
+
+  /@tabler/icons-vue@2.23.0(vue@3.3.4):
+    resolution: {integrity: sha512-lVAtydvUVVg4VDIDzATe1fMLcJCfMRPQhirV+i8XvZtAAARTbaIsoEK0N7igwxIcEVCrVlo6hF4YLm/0BZ4yBw==}
+    peerDependencies:
+      vue: '>=3.0.1'
+    dependencies:
+      '@tabler/icons': 2.23.0
+      vue: 3.3.4
+    dev: false
+
+  /@tabler/icons@2.23.0:
+    resolution: {integrity: sha512-dU54aBwaxG0H+jQ4BdrqtYFN5L7PZevvlnzyL6XeOZgfDS3+sVNCtuG3JmpTEqQSwGLYC1IEwogPGA/Iit2bOA==}
+    dev: false
 
   /@types/estree@1.0.1:
     resolution: {integrity: sha512-LG4opVs2ANWZ1TJoKc937iMmNstM/d0ae1vNbnBvBhqCSezgVUOzcLCqbI5elV8Vy6WKwKjaqR+zO9VKirBBCA==}

@@ -11,6 +11,7 @@
     "stop": "kill-port --port 5001"
   },
   "dependencies": {
+    "@tabler/icons-vue": "^2.23.0",
     "pinia": "^2.1.4",
     "vue": "^3.3.4"
   },
