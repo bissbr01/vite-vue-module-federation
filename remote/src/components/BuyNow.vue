@@ -6,12 +6,14 @@ interface BuyNowProps {
   item: Item
 }
 const props = defineProps<BuyNowProps>()
+const emit = defineEmits<{ addedToCart: [item: Item] }>()
 
 const cart = useCartStore()
 const handleClick = () => {
-  let newItem = props.item
-  cart.items.push(newItem)
+  cart.items.push(props.item)
+  emit('addedToCart', props.item)
 }
+
 </script>
 
 <template>
