@@ -1,11 +1,6 @@
 <script setup lang="ts">
 
-const testIcon = {
-  sku: 123,
-  title: 'test paste',
-  price: 144,
-  quantity: 1
-}
+
 </script>
 
 <template>
@@ -17,9 +12,7 @@ const testIcon = {
           <Navigation class="nav" />
         </el-aside>
         <el-main>
-          <el-button>Test</el-button>
-          <BuyNow :item="testIcon" />
-          <CartIcon />
+          <RouterView />
         </el-main>
       </el-container>
     </el-container>

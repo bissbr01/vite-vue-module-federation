@@ -23,5 +23,7 @@ declare module 'vue' {
     IEpAddLocation: typeof import('~icons/ep/add-location')['default']
     IEpLocation: typeof import('~icons/ep/location')['default']
     Navigation: typeof import('./src/components/Navigation.vue')['default']
+    RouterLink: typeof import('vue-router')['RouterLink']
+    RouterView: typeof import('vue-router')['RouterView']
   }
 }
