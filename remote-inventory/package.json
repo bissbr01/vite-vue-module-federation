@@ -1,0 +1,26 @@
+{
+  "name": "vite-federation-remote",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5001 --strictPort",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview --port 5001 --strictPort",
+    "clean": "rm -rf dist",
+    "stop": "kill-port --port 5001"
+  },
+  "dependencies": {
+    "@tabler/icons-vue": "^2.23.0",
+    "pinia": "^2.1.4",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@originjs/vite-plugin-federation": "^1.2.3",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "kill-port": "^2.0.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9",
+    "vue-tsc": "^1.4.2"
+  }
+}
