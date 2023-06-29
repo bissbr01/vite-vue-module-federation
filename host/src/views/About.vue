@@ -3,8 +3,9 @@
 </script>
 <template>
   <div>
-    This is the home page
+    Include explanation here.
   </div>
 </template>
+
 
 <style scoped></style>

@@ -4,11 +4,11 @@
 </script>
 
 <template>
-  <div class="common-layout">
-    <el-container>
-      <el-header>Header</el-header>
+  <div style="height:98vh">
+    <el-container style="height:100%">
+      <el-header class="title">Micro Frontend POC</el-header>
       <el-container>
-        <el-aside width="300px">
+        <el-aside width="300px" style="height:100%">
           <Navigation class="nav" />
         </el-aside>
         <el-main>
@@ -23,6 +23,12 @@
 .container {
   display: flex;
   flex-direction: row;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
 }
 
 .nav {

@@ -1,10 +1,12 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import Home from './views/Home.vue'
 import Inventory from './views/Inventory.vue'
+import Checkout from './views/Checkout.vue'
+import About from './views/About.vue'
 
 const routes = [
-  { path: '/', component: Home },
-  { path: '/inventory', component: Inventory },
+  { path: '/', component: Inventory },
+  { path: '/checkout', component: Checkout },
+  { path: '/about', component: About },
 ]
 
 // 3. Create the router instance and pass the `routes` option
