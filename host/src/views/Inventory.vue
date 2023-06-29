@@ -18,13 +18,11 @@ const dataFormatted = computed(() => data.value
 <template>
   <div>
     <div v-if="error">Could not fetch data, please try again later.</div>
-    <section v-if="data" class="cards">
+    <section v-if="data" class="card-container">
       <KeepAlive>
-        <div v-for="card in dataFormatted" :key="card.index">
-          <Card :="card" class="card">
-            <BuyNow :item="card" />
-          </Card>
-        </div>
+        <Card v-for="card in dataFormatted" :key="card.index" class="card" :="card">
+          <BuyNow :item="card" />
+        </Card>
       </KeepAlive>
     </section>
   </div>
@@ -37,12 +35,14 @@ const dataFormatted = computed(() => data.value
   width: 100%;
 }
 
-.cards {
+.card-container {
   display: flex;
   flex-flow: row wrap;
   min-width: 0px;
   gap: 1rem;
 }
+
+.cards {}
 
 .card {
   width: 300px;

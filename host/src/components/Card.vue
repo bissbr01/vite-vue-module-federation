@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import { useRouter } from 'vue-router'
 export interface CardProps {
   id: string
   author: string
@@ -8,10 +8,11 @@ export interface CardProps {
 defineProps<CardProps>()
 defineSlots<{ default(props: {}): any }>()
 
+const router = useRouter()
 </script>
 <template>
   <el-card style="{ padding: '0px' }">
-    <img :src="url" class="image" width="260" height="170" />
+    <img :src="url" class="image" width="260" height="170" @click="() => router.push(`/item/${id}`)" />
     <div>
       <div class="author">
         <span>{{ author }}</span>
@@ -40,6 +41,7 @@ defineSlots<{ default(props: {}): any }>()
 .image {
   width: 100%;
   display: block;
+  cursor: pointer;
 }
 
 .author {
