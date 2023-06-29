@@ -6,4 +6,4 @@ declare module '*.vue' {
   export default component
 }
 
-declare module "remote_app/*" { }
+declare module "remote-retailing/*" { }

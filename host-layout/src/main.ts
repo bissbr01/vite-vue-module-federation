@@ -6,8 +6,8 @@ import { router } from './router'
 
 const pinia = createPinia()
 const app = createApp(App)
-const BuyNow = defineAsyncComponent(() => import("remote_app/BuyNow"));
-const CartIcon = defineAsyncComponent(() => import("remote_app/CartIcon"));
+const BuyNow = defineAsyncComponent(() => import("remote-retailing/BuyNow"));
+const CartIcon = defineAsyncComponent(() => import("remote-retailing/CartIcon"));
 
 app.use(pinia)
 app.use(router)

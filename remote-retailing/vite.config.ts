@@ -7,9 +7,8 @@ export default defineConfig({
   plugins: [
     vue(),
     federation({
-      name: 'remote-app',
+      name: 'remote-retailing',
       filename: 'remoteEntry.js',
-      // Modules to expose
       exposes: {
         './BuyNow': './src/components/BuyNow.vue',
         './CartIcon': './src/components/CartIcon.vue',

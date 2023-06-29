@@ -32,7 +32,7 @@ export default defineConfig({
     federation({
       name: 'host-app',
       remotes: {
-        remote_app: "http://localhost:5001/assets/remoteEntry.js",
+        'remote-retailing': "http://localhost:5001/assets/remoteEntry.js",
       },
       shared: ['vue', 'pinia']
     })
