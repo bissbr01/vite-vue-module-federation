@@ -4,15 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port 5001 --strictPort",
+    "dev": "vite --port 5002 --strictPort",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview --port 5001 --strictPort",
+    "serve": "vite preview --port 5002 --strictPort",
     "clean": "rm -rf dist",
-    "stop": "kill-port --port 5001"
+    "stop": "kill-port --port 5002"
   },
   "dependencies": {
     "@tabler/icons-vue": "^2.23.0",
     "pinia": "^2.1.4",
+    "swrv": "^1.0.3",
     "vue": "^3.3.4"
   },
   "devDependencies": {

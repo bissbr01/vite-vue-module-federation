@@ -1,20 +1,12 @@
 <script setup lang="ts">
-import BuyNow from './components/BuyNow.vue'
-import CartIcon from './components/CartIcon.vue';
+import Inventory from './components/Inventory.vue';
 
-const testItem = {
-  sku: 123,
-  name: 'test paste',
-  price: 142,
-  quantity: 1
-}
 </script>
 
 <template>
   <div class="container">
     <h1 class="title">Remote App</h1>
-    <BuyNow :item="testItem" />
-    <CartIcon />
+    <Inventory />
     <span></span>
   </div>
 </template>
