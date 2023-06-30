@@ -5,7 +5,7 @@ import Inventory from './components/Inventory.vue';
 
 <template>
   <div class="container">
-    <h1 class="title">Remote App</h1>
+    <h1 class="title">Remote Inventory</h1>
     <Inventory />
     <span></span>
   </div>

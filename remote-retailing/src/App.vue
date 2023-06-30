@@ -12,7 +12,7 @@ const testItem = {
 
 <template>
   <div class="container">
-    <h1 class="title">Remote App</h1>
+    <h1 class="title">Remote Retailing</h1>
     <BuyNow :item="testItem" />
     <CartIcon />
     <span></span>

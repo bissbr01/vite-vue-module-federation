@@ -22,7 +22,9 @@ const dataFormatted = computed(() => data.value
     <section v-if="data" class="card-container">
       <KeepAlive>
         <Card v-for="card in dataFormatted" :key="card.index" class="card" :="card">
-          <BuyNow :item="card" />
+          <div class="cta">
+            <BuyNow :item="card" />
+          </div>
         </Card>
       </KeepAlive>
     </section>
@@ -50,5 +52,11 @@ const dataFormatted = computed(() => data.value
   background: darkgray;
   border-radius: 0.25rem;
   border: 5px solid teal;
+}
+
+.cta {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-grow: 1;
 }
 </style>
