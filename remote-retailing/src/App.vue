@@ -4,7 +4,7 @@ import Cart from './components/Cart.vue';
 
 const testItem = {
   sku: 123,
-  name: 'test paste',
+  title: 'test paste',
   price: 142,
   quantity: 1,
   url: 'https://picsum.photos/id/48/5000/3333'

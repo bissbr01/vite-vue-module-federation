@@ -1,7 +1,7 @@
 export interface Item {
   sku: number
   price: number
-  name: string
+  title: string
   quantity: number
   url: string
 }

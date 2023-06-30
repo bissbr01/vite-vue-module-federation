@@ -15,7 +15,7 @@ const cart = useCartStore()
     <menu class="menu">
       <ul v-for="item in cart.items" :key="item.sku" class="cart-item">
         <div><img :src="item.url" width="200" height="150" class="img" /></div>
-        <span style="font-size: 18px; font-weight: 600;">{{ item.name }}</span>
+        <span style="font-size: 18px; font-weight: 600;">{{ item.title }}</span>
         <span>sku: {{ item.sku }}</span>
         <div>
           <button style="font-size: 16">${{ item.price }}</button>
