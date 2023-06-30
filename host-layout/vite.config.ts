@@ -33,6 +33,7 @@ export default defineConfig({
       name: 'host-app',
       remotes: {
         'remote-retailing': "http://localhost:5001/assets/remoteEntry.js",
+        'remote-inventory': "http://localhost:5002/assets/remoteEntry.js",
       },
       shared: ['vue', 'pinia']
     })

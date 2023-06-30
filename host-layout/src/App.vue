@@ -26,7 +26,7 @@
 }
 
 .title {
-  font-size: 30px;
+  font-size: 36px;
   text-align: center;
   font-weight: 700;
 }
@@ -34,5 +34,8 @@
 .nav {
   width: 300px;
   height: 100%;
+  background: darkgray;
+  color: white;
+  border: none;
 }
 </style>
