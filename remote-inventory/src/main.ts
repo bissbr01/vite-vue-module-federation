@@ -7,9 +7,9 @@ const pinia = createPinia()
 const app = createApp(App)
 
 const BuyNow = defineAsyncComponent(() => import("remote-retailing/BuyNow"));
-const CartIcon = defineAsyncComponent(() => import("remote-retailing/CartIcon"));
+const Cart = defineAsyncComponent(() => import("remote-retailing/Cart"));
 
 app.component('BuyNow', BuyNow)
-app.component('CartIcon', CartIcon)
+app.component('Cart', Cart)
 app.use(pinia)
 app.mount('#app')

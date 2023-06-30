@@ -8,7 +8,7 @@ const testItem = {
 </script>
 <template>
   <BuyNow :item="testItem" />
-  <CartIcon />
+  <Cart />
 </template>
 
 

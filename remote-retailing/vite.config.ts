@@ -11,7 +11,7 @@ export default defineConfig({
       filename: 'remoteEntry.js',
       exposes: {
         './BuyNow': './src/components/BuyNow.vue',
-        './CartIcon': './src/components/CartIcon.vue',
+        './Cart': './src/components/Cart.vue',
       },
       shared: ['vue', 'pinia']
     })
