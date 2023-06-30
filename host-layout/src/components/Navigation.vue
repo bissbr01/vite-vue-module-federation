@@ -22,6 +22,8 @@ const router = useRouter()
 .menu-item {
   color: white;
   font-size: 18px;
+  font-weight: 700;
+  border-bottom: 1px solid white;
 }
 
 .menu-item:hover {

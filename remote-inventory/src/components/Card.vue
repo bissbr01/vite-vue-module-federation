@@ -9,7 +9,7 @@ defineSlots<{ default(props: {}): any }>()
 
 </script>
 <template>
-  <el-card>
+  <article>
     <img :src="url" class="image" width="260" height="170" />
     <div>
       <div class="author">
@@ -19,7 +19,7 @@ defineSlots<{ default(props: {}): any }>()
         <slot />
       </div>
     </div>
-  </el-card>
+  </article>
 </template>
 
 <style scoped>

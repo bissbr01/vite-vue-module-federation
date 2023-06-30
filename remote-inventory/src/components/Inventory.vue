@@ -48,13 +48,14 @@ const dataFormatted = computed(() => data.value
 
 .card {
   width: 300px;
-  height: 300px;
+  height: 100%;
   background: darkgray;
   border-radius: 0.25rem;
   border: 5px solid teal;
 }
 
 .cta {
+  padding: 0 2rem 2rem 2rem;
   display: flex;
   flex-flow: row nowrap;
   flex-grow: 1;
