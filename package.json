@@ -8,9 +8,9 @@
     "build": "pnpm --parallel --filter \"./**\" build ",
     "serve": "pnpm --parallel --filter \"./**\" serve ",
     "restart": "pnpm stop & pnpm build & pnpm serve",
-    "build:remotes": "pnpm --parallel --filter \"./remote\" build",
-    "serve:remotes": "pnpm --parallel --filter \"./remote\"  serve",
-    "dev:hosts": "pnpm --filter \"./host\" dev",
+    "build:remotes": "pnpm --parallel --filter \"./remote*\" build",
+    "serve:remotes": "pnpm --parallel --filter \"./remote*\"  serve",
+    "dev:hosts": "pnpm --filter \"./host*\" dev",
     "stop": "kill-port --port 5000,5001",
     "clean": "pnpm run clean"
   },
