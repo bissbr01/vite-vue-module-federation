@@ -58,6 +58,8 @@ federation({
 
 ## Setup
 
+This project uses `pnpm`.  If needed, [setup steps are here.](https://pnpm.io/installation)
+
 Clone the repo, `cd` to root dir of repo, then run:
 ```bash
 pnpm install

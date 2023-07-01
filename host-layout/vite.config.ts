@@ -5,12 +5,25 @@ import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import IconsResolver from 'unplugin-icons/resolver'
 import federation from "@originjs/vite-plugin-federation";
-
+import Markdown from 'vite-plugin-vue-markdown'
+import MarkdownItAnchor from 'markdown-it-anchor'
+import MarkdownItPrism from 'markdown-it-prism'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
+    vue({
+      include: [/\.vue$/, /\.md$/]
+    }),
+    Markdown({
+      markdownItSetup(md) {
+        md.use(MarkdownItAnchor)
+        md.use(MarkdownItPrism, {
+          highlightInlineCode: true,
+
+        })
+      },
+    }),
     AutoImport({
       imports: ['vue'],
       resolvers: [

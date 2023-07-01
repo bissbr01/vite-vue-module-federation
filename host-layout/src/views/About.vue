@@ -1,11 +1,16 @@
 <script setup lang="ts">
-
+import Readme from '../../../README.md' 
 </script>
 <template>
-  <div>
-    Include explanation here.
+  <div class="markdown">
+    <Readme />
   </div>
 </template>
 
 
-<style scoped></style>
+<style scoped>
+.markdown {
+  max-width: 1000px;
+  margin: 1rem auto;
+}
+</style>
